@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -8,7 +9,18 @@ export default () => {
     <Nav>
       <ul>
         <li>
-          <a href="http://github.com/Nattasak">Github</a>
+          <a href="http://github.com/Nattasak" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+        </li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/project">Project</Link>
         </li>
       </ul>
     </Nav>

@@ -16,7 +16,7 @@ export default () => {
     <Header>
       <Container>
         Header
-        {/* <Nav /> */}
+        <Nav />
       </Container>
     </Header>
   )
