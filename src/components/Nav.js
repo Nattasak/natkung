@@ -9,11 +9,6 @@ export default () => {
     <Nav>
       <ul>
         <li>
-          <a href="http://github.com/Nattasak" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-        </li>
-        <li>
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -21,6 +16,11 @@ export default () => {
         </li>
         <li>
           <Link to="/project">Project</Link>
+        </li>
+        <li>
+          <a href="http://github.com/Nattasak" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
         </li>
       </ul>
     </Nav>
