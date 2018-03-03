@@ -1,9 +1,9 @@
+import { em } from 'polished'
 import React, { Component } from 'react'
 import styled, { injectGlobal } from 'styled-components'
-import { em } from 'polished'
 
-import Header from './Header'
 import Footer from './Footer'
+import Header from './Header'
 
 injectGlobal`
   body {

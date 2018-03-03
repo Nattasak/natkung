@@ -10,3 +10,11 @@ export const Container = styled.div.attrs({
 })`
   font-size: ${em('18px')};
 `
+
+export const Title = styled.h1.attrs({
+  className: 'title',
+})`
+  color: blue;
+  font-size: ${em('20px')};
+  letter-spacing: 2px;
+`
