@@ -1,0 +1,32 @@
+{
+  "name": "natkung",
+  "version": "0.1.0",
+  "author": "Nattasak Lertpoompunya",
+  "license": "UNLICENSED",
+  "homepage": "https://nattasak.github.io/natkung",
+  "dependencies": {
+    "antd": "^3.2.3",
+    "polished": "^1.9.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "styled-components": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.5",
+    "gh-pages": "^1.1.0",
+    "husky": "^0.14.3",
+    "prettier": "1.11.1",
+    "pretty-quick": "^1.4.1",
+    "react-app-rewired": "^1.4.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  }
+}
