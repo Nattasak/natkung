@@ -2,6 +2,7 @@ import { em } from 'polished'
 import React, { Component } from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
+import { Section, Container } from '../shared/styles'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -14,15 +15,15 @@ injectGlobal`
 
 const PageContainer = styled.div``
 
-const ChildrenContainer = styled.div``
-
 export default class Layout extends Component {
   render() {
     const { children } = this.props
     return (
       <PageContainer>
         <Header />
-        <ChildrenContainer>{children}</ChildrenContainer>
+        <Section>
+          <Container>{children}</Container>
+        </Section>
         <Footer />
       </PageContainer>
     )

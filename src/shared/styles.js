@@ -18,3 +18,7 @@ export const Title = styled.h1.attrs({
   font-size: ${em('20px')};
   letter-spacing: 2px;
 `
+
+export const Hr = styled.hr`
+  background-color: black;
+`

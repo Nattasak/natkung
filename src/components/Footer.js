@@ -5,16 +5,15 @@ import { Container } from '../shared/styles'
 
 const Footer = styled.footer.attrs({
   className: 'footer',
-})``
+})`
+  background: #41e2e2;
+  color: white;
+`
 
 export default () => {
   return (
     <Footer>
-      <Container>
-        <div className="content has-text-centered">
-          <p>Footer</p>
-        </div>
-      </Container>
+      <Container>Footer</Container>
     </Footer>
   )
 }
