@@ -1,4 +1,4 @@
-import { Icon } from 'antd'
+import { Icon, Tooltip } from 'antd'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import styled from 'styled-components'
@@ -56,19 +56,25 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="/about">
-            <Icon type="idcard" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
-          </Link>
+          <Tooltip placement="bottom" title="Profile">
+            <Link to="/profile">
+              <Icon type="idcard" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
+            </Link>
+          </Tooltip>
         </li>
         <li>
-          <Link to="/project">
-            <Icon type="rocket" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
-          </Link>
+          <Tooltip placement="bottom" title="Project">
+            <Link to="/project">
+              <Icon type="rocket" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
+            </Link>
+          </Tooltip>
         </li>
         <li>
-          <a href="http://github.com/Nattasak">
-            <Icon type="github" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
-          </a>
+          <Tooltip placement="bottom" title="Github">
+            <a href="http://github.com/Nattasak">
+              <Icon type="github" style={{ fontSize: '1.2em', color: 'rgba(255, 255, 255, 0.75)' }} />
+            </a>
+          </Tooltip>
         </li>
       </Menu>
     </Nav>

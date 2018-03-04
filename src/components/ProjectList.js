@@ -22,9 +22,7 @@ export default class ProjectList extends Component {
               <Project key={project.id}>
                 <strong>{project.title}</strong>
                 <p>{project.desc}</p>
-                <a href={project.href} target="_blank" rel="noopener noreferrer">
-                  See project
-                </a>
+                <a href={project.href}>See project</a>
               </Project>
             ))}
           </ul>
