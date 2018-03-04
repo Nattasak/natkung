@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
 import { Section, Container } from '../shared/styles'
-import Footer from './Footer'
+// import Footer from './Footer'
 import Header from './Header'
 
 injectGlobal`
@@ -24,7 +24,7 @@ export default class Layout extends Component {
         <Section>
           <Container>{children}</Container>
         </Section>
-        <Footer />
+        {/* <Footer /> */}
       </PageContainer>
     )
   }
