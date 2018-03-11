@@ -10,6 +10,7 @@ injectGlobal`
   body {
     font-size: ${em('25px')};
     color: #000000;
+    counter-reset: item; /* Counters */
   }
 `
 
