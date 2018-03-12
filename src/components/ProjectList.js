@@ -13,17 +13,17 @@ const ProjectsWrapper = styled.div`
 
   li {
     counter-increment: item; /* Counters */
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     position: relative;
 
     &:before {
       content: counter(item); /* Counters */
       border-radius: 50%;
-      width: 2rem;
-      height: 2rem;
+      width: 1.7rem;
+      height: 1.7rem;
       margin-right: 21px;
-      font-size: 20px;
-      color: #fff;
+      font-size: 17px;
+      color: white;
       background: #24292e;
       text-align: center;
       display: inline-block;
@@ -36,7 +36,7 @@ const ProjectsWrapper = styled.div`
       font-size: 0.7em;
       font-weight: 600;
       width: 210px;
-      margin-left: 54px;
+      margin-left: 47px;
       display: inline-block;
 
       &:hover {
@@ -46,7 +46,7 @@ const ProjectsWrapper = styled.div`
 
     p {
       font-size: 0.6em;
-      margin-left: 56px;
+      margin-left: 49px;
     }
   }
 
@@ -56,6 +56,8 @@ const ProjectsWrapper = styled.div`
     }
 
     li {
+      margin-bottom: 40px;
+
       p {
         font-size: 0.7em;
       }

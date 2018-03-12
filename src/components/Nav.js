@@ -62,13 +62,13 @@ const Menu = styled.ul`
   }
 
   @media (min-width: 768px) {
-    margin: 0;
     width: auto;
+    margin: 0;
 
     li {
 
       &:not(:last-child) {
-        margin-right: 40px !important;
+        margin-right: 40px;
       }
     }
   }
