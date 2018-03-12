@@ -1,5 +1,5 @@
 import { Icon } from 'antd'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -53,16 +53,24 @@ const Menu = styled.ul`
         color: #fff !important;
       }
     }
+  }
 
-    i {
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 28px !important;
-      transition: color 0.3s;
+  a {
+    &.active {
+      i {
+        color: #fff !important;
+      }
     }
+  }
 
-    span {
-      display: none;
-    }
+  i {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 28px !important;
+    transition: color 0.3s;
+  }
+
+  span {
+    display: none;
   }
 
   @media (min-width: 768px) {
@@ -112,44 +120,46 @@ export default () => {
   return (
     <Nav>
       <Logo>
-        <Link to="/home">Nattasak L.</Link>
+        <NavLink to="/home" activeClassName="active">
+          Nattasak L.
+        </NavLink>
       </Logo>
       <Menu>
         <li>
-          <Link to="/home">
+          <NavLink to="/home" activeClassName="active">
             <Icon type="home" />
             <span>Home</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">
+          <NavLink to="/about" activeClassName="active">
             <Icon type="idcard" />
             <span>About</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/work">
+          <NavLink to="/work" activeClassName="active">
             <Icon type="hdd" />
             <span>Work</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/project">
+          <NavLink to="/project" activeClassName="active">
             <Icon type="rocket" />
             <span>Project</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/playground">
+          <NavLink to="/playground" activeClassName="active">
             <Icon type="smile-o" />
             <span>Play</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/social">
+          <NavLink to="/social" activeClassName="active">
             <Icon type="coffee" />
             <span>Social</span>
-          </Link>
+          </NavLink>
         </li>
       </Menu>
     </Nav>
