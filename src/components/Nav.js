@@ -73,10 +73,12 @@ const Menu = styled.ul`
     display: none;
   }
 
+  /* [ Tablets ] */
   @media (min-width: 768px) {
     width: 40%;
   }
 
+  /* [ Desktops ] */
   @media (min-width: 1025px) {
     li {
       width: 100%;
