@@ -94,7 +94,7 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="/playground">
+          <Link to="#">
             <Icon type="coffee" />
           </Link>
         </li>
