@@ -5,13 +5,11 @@ import styled from 'styled-components'
 
 const Nav = styled.nav`
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   padding: 0 20px;
 
   @media (min-width: 768px) {
-    min-height: initial;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -28,7 +26,6 @@ const Logo = styled.div`
 
     &:hover {
       color: #fff;
-      text-decoration: none;
     }
 
     &:focus {
