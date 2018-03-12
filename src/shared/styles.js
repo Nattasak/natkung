@@ -1,6 +1,16 @@
 import styled from 'styled-components'
 import { em, darken } from 'polished'
 
+export const PageTitle = styled.h1`
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 54px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+`
+
 export const Section = styled.section`
   padding: 3rem 0;
 `

@@ -4,7 +4,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Nav = styled.nav`
-  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,8 +20,8 @@ const Nav = styled.nav`
 const Logo = styled.div`
   a {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 1.5em;
-    letter-spacing: 3px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
 
     &:hover {
       color: #fff;
@@ -43,18 +42,13 @@ const Logo = styled.div`
 
 const Menu = styled.ul`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 0.7;
+  justify-content: space-between;
+  width: 80%;
   padding: 0;
-  margin: 1.5em 0;
+  margin: 1em 0 .4em;
 
   li {
     margin: 0;
-
-    &:not(:last-child) {
-      margin-bottom: 60px;
-    }
 
     &:hover i {
       color: #fff !important;
@@ -63,25 +57,18 @@ const Menu = styled.ul`
     i {
       transition: color 0.3s;
       color: rgba(255, 255, 255, 0.75);
-      font-size: 3em !important;
+      font-size: 1.2em !important;
     }
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 0;
     margin: 0;
+    width: auto;
 
     li {
-      margin: 0 !important;
 
       &:not(:last-child) {
         margin-right: 40px !important;
-      }
-
-      i {
-        font-size: 1.2em !important;
       }
     }
   }
