@@ -14,23 +14,19 @@ export const SocialWrapper = styled.div`
     justify-content: space-between;
     height: 100%;
     margin: 0;
+  }
 
-    li {
-      i {
-        font-size: 10vh !important;
-      }
-    }
+  i {
+    font-size: 10vh !important;
   }
 
   @media (min-width: 768px) {
     ul {
       flex-direction: row;
+    }
 
-      li {
-        i {
-          font-size: 10vw !important;
-        }
-      }
+    i {
+      font-size: 10vw !important;
     }
   }
 `

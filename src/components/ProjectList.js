@@ -1,4 +1,3 @@
-import { darken } from 'polished'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
@@ -32,17 +31,9 @@ const ProjectsWrapper = styled.div`
     }
 
     a {
-      text-decoration: none;
-      color: #0366d6;
-      font-size: 14px;
-      font-weight: 600;
+      display: inline-block;
       width: 210px;
       margin-left: 35px;
-      display: inline-block;
-
-      &:hover {
-        color: ${darken(0.1, '#0366d6')};
-      }
     }
 
     p {

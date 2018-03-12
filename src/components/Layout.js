@@ -16,6 +16,17 @@ const PageContainer = styled.div`
 
 const ChildrenWrapper = styled.main`
   padding: 2rem 1.5rem;
+
+  a {
+    color: #0366d6;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: #024ea4;
+    }
+  }
 `
 
 export default class Layout extends Component {
