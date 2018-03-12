@@ -87,13 +87,7 @@ const Menu = styled.ul`
   }
 
   @media (min-width: 768px) {
-    width: auto;
-
-    li {
-      &:not(:last-child) {
-        margin-right: 40px;
-      }
-    }
+    width: 40%;
   }
 `
 
