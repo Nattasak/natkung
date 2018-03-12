@@ -47,14 +47,37 @@ const Menu = styled.ul`
 
   li {
     margin: 0;
-    width: 100%;
 
     &:hover {
       i {
-        opacity: 0;
+        color: #fff !important;
       }
-      span {
-        opacity: 1;
+    }
+
+    i {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 28px !important;
+      transition: color 0.3s;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 40%;
+
+    li {
+      width: 100%;
+
+      &:hover {
+        i {
+          opacity: 0;
+        }
+        span {
+          opacity: 1;
+        }
       }
     }
 
@@ -64,10 +87,8 @@ const Menu = styled.ul`
     }
 
     i {
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 28px !important;
       width: 100%;
-      transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out !important;
     }
 
     span {
@@ -77,17 +98,13 @@ const Menu = styled.ul`
       color: #fff;
       text-align: center;
       text-transform: uppercase;
-      display: block;
+      display: block !important;
       position: absolute;
       bottom: 7px;
       width: 100%;
       opacity: 0;
       transition: all 0.3s ease-out;
     }
-  }
-
-  @media (min-width: 768px) {
-    width: 40%;
   }
 `
 
