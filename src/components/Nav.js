@@ -100,18 +100,13 @@ export default () => {
         </li>
         <li>
           <Link to="/playground">
-            <Icon type="coffee" />
+            <Icon type="smile-o" />
           </Link>
         </li>
         <li>
           <Link to="/social">
-            <Icon type="customer-service" />
+            <Icon type="coffee" />
           </Link>
-        </li>
-        <li>
-          <a href="http://github.com/Nattasak">
-            <Icon type="github" />
-          </a>
         </li>
       </Menu>
     </Nav>

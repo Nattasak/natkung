@@ -44,17 +44,17 @@ export default () => {
           <SocialWrapper>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://github.com/Nattasak">
+                  <Icon type="github" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/NatZa55490826">
                   <Icon type="twitter" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <Icon type="facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                <a href="https://medium.com/@nattasak111">
                   <Icon type="medium" />
                 </a>
               </li>
