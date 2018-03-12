@@ -75,7 +75,9 @@ const Menu = styled.ul`
 
   @media (min-width: 768px) {
     width: 40%;
+  }
 
+  @media (min-width: 1025px) {
     li {
       width: 100%;
 
