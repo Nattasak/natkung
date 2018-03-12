@@ -1,31 +1,31 @@
 import styled from 'styled-components'
-import { em, darken } from 'polished'
+// import { darken } from 'polished'
 
 export const PageTitle = styled.h1`
   color: black;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
-  width: 54px;
+  width: 36px;
   border-bottom: 1px solid #000;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
 `
 
 export const Section = styled.section`
-  padding: 3rem 0;
+  padding: 1.1rem 0;
 `
 
 export const Container = styled.div``
 
 export const Title = styled.h1`
   color: #03A9F4;
-  font-size: ${em('19px')};
+  font-size: 19px;
   letter-spacing: 2px;
 `
 
 export const SubTitle = styled.h2`
   color: black;
-  font-size: ${em('13px')};
+  font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 2em;
 `

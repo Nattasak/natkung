@@ -13,53 +13,49 @@ const ProjectsWrapper = styled.div`
 
   li {
     counter-increment: item; /* Counters */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 
     &:before {
       content: counter(item); /* Counters */
       border-radius: 50%;
-      width: 1.7rem;
-      height: 1.7rem;
-      margin-right: 21px;
-      font-size: 17px;
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 14px;
+      padding-top: 1px;
       color: white;
       background: #24292e;
       text-align: center;
       display: inline-block;
       position: absolute;
-      top: 12px;
+      top: 15px;
     }
 
     a {
       text-decoration: none;
-      font-size: 0.7em;
+      color: #0366d6;
+      font-size: 14px;
       font-weight: 600;
       width: 210px;
-      margin-left: 47px;
+      margin-left: 35px;
       display: inline-block;
 
       &:hover {
-        color: ${darken(0.2, '#1890ff')};
+        color: ${darken(0.1, '#0366d6')};
       }
     }
 
     p {
-      font-size: 0.6em;
-      margin-left: 49px;
+      font-size: 14px;
+      margin-left: 37px;
     }
   }
 
   @media (min-width: 768px) {
-    ol {
-      padding-left: 40px;
-    }
-
     li {
       margin-bottom: 40px;
 
       p {
-        font-size: 0.7em;
       }
     }
   }

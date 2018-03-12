@@ -6,7 +6,7 @@ import ProjectList from '../../components/ProjectList'
 export default () => {
   return (
     <div>
-      <PageTitle>Project</PageTitle>
+      <PageTitle>Projects</PageTitle>
       <ProjectList />
     </div>
   )

@@ -18,9 +18,12 @@ const Nav = styled.nav`
 `
 
 const Logo = styled.div`
+  margin-bottom: 0.4em;
+
   a {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 1.1em;
+    font-size: 24px;
+    font-weight: 600;
     letter-spacing: 1px;
 
     &:hover {
@@ -34,9 +37,7 @@ const Logo = styled.div`
   }
 
   @media (min-width: 768px) {
-    a {
-      font-size: 1em;
-    }
+    margin-bottom: 0;
   }
 `
 
@@ -45,7 +46,7 @@ const Menu = styled.ul`
   justify-content: space-between;
   width: 80%;
   padding: 0;
-  margin: 1em 0 .4em;
+  margin: 0;
 
   li {
     margin: 0;
@@ -57,13 +58,12 @@ const Menu = styled.ul`
     i {
       transition: color 0.3s;
       color: rgba(255, 255, 255, 0.75);
-      font-size: 1.2em !important;
+      font-size: 1em !important;
     }
   }
 
   @media (min-width: 768px) {
     width: auto;
-    margin: 0;
 
     li {
 
