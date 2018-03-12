@@ -14,6 +14,7 @@ const ProjectsWrapper = styled.div`
   li {
     counter-increment: item; /* Counters */
     margin-bottom: 45px;
+    position: relative;
 
     &:before {
       content: counter(item); /* Counters */
@@ -26,19 +27,17 @@ const ProjectsWrapper = styled.div`
       background: #24292e;
       text-align: center;
       display: inline-block;
-      position: relative;
-      top: -9px;
+      position: absolute;
+      top: 12px;
     }
 
     a {
       text-decoration: none;
-      font-size: 0.8em;
+      font-size: 0.7em;
       font-weight: 600;
-      width: 250px; /* Truncate text */
-      overflow: hidden; /* Truncate text */
-      white-space: nowrap; /* Truncate text */
-      text-overflow: ellipsis; /* Truncate text */
-      display: inline-block; /* Truncate text */
+      width: 210px;
+      margin-left: 54px;
+      display: inline-block;
 
       &:hover {
         color: ${darken(0.2, '#1890ff')};

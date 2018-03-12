@@ -22,7 +22,7 @@ const Logo = styled.div`
   a {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.5em;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 
     &:hover {
       color: #fff;
@@ -50,7 +50,6 @@ const Menu = styled.ul`
   margin: 1.5em 0;
 
   li {
-    list-style-type: none;
     margin: 0;
 
     &:not(:last-child) {

@@ -2,12 +2,10 @@ import styled from 'styled-components'
 import { em, darken } from 'polished'
 
 export const Section = styled.section`
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 `
 
-export const Container = styled.div`
-  font-size: ${em('18px')};
-`
+export const Container = styled.div``
 
 export const Title = styled.h1`
   color: #03A9F4;
