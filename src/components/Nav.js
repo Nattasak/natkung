@@ -47,15 +47,42 @@ const Menu = styled.ul`
 
   li {
     margin: 0;
+    width: 100%;
 
-    &:hover i {
-      color: #fff !important;
+    &:hover {
+      i {
+        opacity: 0;
+      }
+      span {
+        opacity: 1;
+      }
+    }
+
+    a {
+      position: relative;
+      display: block;
     }
 
     i {
-      transition: color 0.3s;
       color: rgba(255, 255, 255, 0.75);
       font-size: 28px !important;
+      width: 100%;
+      transition: all 0.3s ease-out;
+    }
+
+    span {
+      content: ' ';
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      bottom: 7px;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.3s ease-out;
     }
   }
 
@@ -63,7 +90,6 @@ const Menu = styled.ul`
     width: auto;
 
     li {
-
       &:not(:last-child) {
         margin-right: 40px;
       }
@@ -81,31 +107,37 @@ export default () => {
         <li>
           <Link to="/home">
             <Icon type="home" />
+            <span>Home</span>
           </Link>
         </li>
         <li>
           <Link to="/about">
             <Icon type="idcard" />
+            <span>About</span>
           </Link>
         </li>
         <li>
           <Link to="/work">
             <Icon type="hdd" />
+            <span>Work</span>
           </Link>
         </li>
         <li>
           <Link to="/project">
             <Icon type="rocket" />
+            <span>Project</span>
           </Link>
         </li>
         <li>
           <Link to="/playground">
             <Icon type="smile-o" />
+            <span>Play</span>
           </Link>
         </li>
         <li>
           <Link to="/social">
             <Icon type="coffee" />
+            <span>Social</span>
           </Link>
         </li>
       </Menu>
