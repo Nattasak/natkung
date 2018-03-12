@@ -5,7 +5,7 @@ import { PageTitle } from '../../shared/styles'
 export default () => {
   return (
     <div>
-      <PageTitle>Profile</PageTitle>
+      <PageTitle>About Nat</PageTitle>
     </div>
   )
 }

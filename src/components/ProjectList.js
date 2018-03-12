@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import { projectListJSON } from '../api/data'
-import { Section, Container, Title } from '../shared/styles'
+import { Section, Container } from '../shared/styles'
 
 const ProjectsWrapper = styled.div`
   ol {
@@ -13,8 +13,8 @@ const ProjectsWrapper = styled.div`
 
   li {
     counter-increment: item; /* Counters */
-    margin-bottom: 20px;
     position: relative;
+    margin-bottom: 22px;
 
     &:before {
       content: counter(item); /* Counters */
@@ -47,8 +47,7 @@ const ProjectsWrapper = styled.div`
 
     p {
       font-size: 14px;
-      margin-left: 37px;
-      margin-bottom: 22px;
+      margin: 0 0 0 37px;
     }
   }
 

@@ -41,7 +41,7 @@ const Logo = styled.div`
 const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   padding: 0;
   margin: 0;
 
@@ -84,8 +84,13 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="/profile">
+          <Link to="/about">
             <Icon type="idcard" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/work">
+            <Icon type="hdd" />
           </Link>
         </li>
         <li>
@@ -94,8 +99,13 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="#">
+          <Link to="/playground">
             <Icon type="coffee" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/social">
+            <Icon type="customer-service" />
           </Link>
         </li>
         <li>

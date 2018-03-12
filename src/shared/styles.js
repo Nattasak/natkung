@@ -7,6 +7,7 @@ export const PageTitle = styled.h1`
   font-weight: 600;
   letter-spacing: 1px;
   width: 36px;
+  white-space: nowrap;
   border-bottom: 1px solid #000;
   padding-bottom: 9px;
 `
