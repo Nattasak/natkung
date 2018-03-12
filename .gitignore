@@ -1,5 +1,4 @@
-/src/routes/Playground
-stylesBulma.js
+/src/shared/stylesBulma.js
 
 ###########################
 
@@ -44,3 +43,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+src/routes/Playground/index.js
+src/routes/Playground/index.js
