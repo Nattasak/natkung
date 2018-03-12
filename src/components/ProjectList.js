@@ -28,7 +28,7 @@ const ProjectsWrapper = styled.div`
       text-align: center;
       display: inline-block;
       position: absolute;
-      top: 15px;
+      top: 2px;
     }
 
     a {
@@ -48,16 +48,11 @@ const ProjectsWrapper = styled.div`
     p {
       font-size: 14px;
       margin-left: 37px;
+      margin-bottom: 22px;
     }
   }
 
   @media (min-width: 768px) {
-    li {
-      margin-bottom: 40px;
-
-      p {
-      }
-    }
   }
 `
 

@@ -18,7 +18,7 @@ const Nav = styled.nav`
 `
 
 const Logo = styled.div`
-  margin-bottom: 0.4em;
+  margin-bottom: 15px;
 
   a {
     color: rgba(255, 255, 255, 0.75);
@@ -58,7 +58,7 @@ const Menu = styled.ul`
     i {
       transition: color 0.3s;
       color: rgba(255, 255, 255, 0.75);
-      font-size: 1em !important;
+      font-size: 28px !important;
     }
   }
 

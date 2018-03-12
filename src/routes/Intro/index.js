@@ -19,7 +19,8 @@ class Intro extends Component {
             {'  '}My name is Nat.
             <Typist.Delay ms={300} />
             <br />
-            <br />I'm a Front End React Js Developer.
+            <br />
+            I'm a Front End React Js Developer.
             {setTimeout(() => this.goHome(), 7000)}
           </Typist>
         </Container>

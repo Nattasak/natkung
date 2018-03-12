@@ -11,7 +11,7 @@ injectGlobal`
 
 const PageContainer = styled.div`
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 17px;
 `
 
 const ChildrenWrapper = styled.main`
