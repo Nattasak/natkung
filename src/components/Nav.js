@@ -149,12 +149,12 @@ export default () => {
             <span>Project</span>
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/playground" activeClassName="active">
             <Icon type="smile-o" />
             <span>Play</span>
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/social" activeClassName="active">
             <Icon type="coffee" />
