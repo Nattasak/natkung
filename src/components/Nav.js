@@ -160,9 +160,9 @@ export default () => {
           </NavLink>
         </li> */}
         <li>
-          <NavLink to="/social" activeClassName="active">
-            <Icon type="coffee" />
-            <span>Social</span>
+          <NavLink to="/contact" activeClassName="active">
+            <Icon type="mail" />
+            <span>Contact</span>
           </NavLink>
         </li>
       </Menu>

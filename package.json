@@ -1,11 +1,12 @@
 {
   "name": "natkung",
   "version": "0.1.0",
+  "homepage": "https://nattasak.github.io/natkung",
   "author": "Nattasak Lertpoompunya",
   "license": "UNLICENSED",
-  "homepage": "https://nattasak.github.io/natkung",
   "dependencies": {
     "antd": "^3.2.3",
+    "formsy-react": "^1.1.4",
     "lodash": "^4.17.5",
     "polished": "^1.9.2",
     "react": "^16.2.0",

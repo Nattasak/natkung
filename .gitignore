@@ -1,5 +1,8 @@
 /src/shared/stylesBulma.js
 
+/src/components/MyInput.js
+/src/routes/Contact/Form.js
+
 ###########################
 
 # We don’t use npm.
