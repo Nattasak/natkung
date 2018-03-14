@@ -61,8 +61,7 @@ export default class App extends Component {
           <Route exact path="/project" component={Project} />
           <Route exact path="/playground" component={Playground} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/404" component={NotFound} />
-          <Redirect to="/404" />
+          <Route component={NotFound} />
         </AnimatedSwitch>
         <BackTop />
       </Layout>
