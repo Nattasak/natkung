@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import { PageTitle } from '../../shared/styles'
 
 const NotFoundWrapper = styled.div`
-  font-size: 8vw;
   color: black;
+  font-size: 4vw;
   font-weight: bold;
 `
 
@@ -14,9 +14,7 @@ export default () => {
     <div>
       <PageTitle>404</PageTitle>
       <NotFoundWrapper>
-        Oh my god!! 404
-        <br />
-        O__O
+        Whoops. Looks like what you're looking for can't be found 😅
       </NotFoundWrapper>
     </div>
   )
