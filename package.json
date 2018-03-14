@@ -9,6 +9,7 @@
     "cxs": "^6.2.0",
     "polished": "^1.9.2",
     "react": "^16.2.0",
+    "react-delay": "^0.1.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-transition": "^1.2.1",

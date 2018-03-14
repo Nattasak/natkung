@@ -1,3 +1,6 @@
+import { Icon } from 'antd'
+import { NavLink } from 'react-router-dom'
+import Delay from 'react-delay'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Typist from 'react-typist'
@@ -20,6 +23,41 @@ const IntroWrapper = styled.div`
 
   span {
     font-size: 4vw;
+  }
+`
+
+const ReplayWrapper = styled.div.attrs({
+  className: 'animated fadeIn',
+})`
+
+  float: left;
+  margin-top: 5vw;
+  margin-left: 9vw;
+
+  i {
+    font-size: 3vw;
+  }
+  p {
+    color: var(--main-link-color);
+    font-size: 2.7vw;
+    margin-top: -1vw;
+  }
+`
+
+const SeeProjectWrapper = styled.div.attrs({
+  className: 'animated bounceInRight',
+})`
+
+  float: right;
+  margin-top: 7vw;
+  margin-right: 3vw;
+
+  a {
+    font-size: 3vw !important;
+    border-bottom: 1px dashed var(--main-link-color);
+    padding-bottom: 4px;
+    width: 45px;
+    white-space: nowrap;
   }
 `
 
@@ -48,6 +86,21 @@ export default class Intro extends Component {
               <Br />
               <span>I'm a Front End Developer 😋</span>
             </Typist>
+            <Delay wait={8300}>
+              <ReplayWrapper>
+                <a href="/">
+                  <Icon type="reload" />
+                  <p>Replay</p>
+                </a>
+              </ReplayWrapper>
+            </Delay>
+            <Delay wait={8700}>
+              <SeeProjectWrapper>
+                <NavLink to="/project" activeClassName="active">
+                  See my personal project →
+                </NavLink>
+              </SeeProjectWrapper>
+            </Delay>
           </IntroWrapper>
         </Container>
       </Section>
