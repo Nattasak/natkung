@@ -3,6 +3,9 @@
 /src/components/MyInput.js
 /src/routes/Contact/Form.js
 
+/src/App-router-old.js
+/src/index-router-old.js
+
 ###########################
 
 # We don’t use npm.

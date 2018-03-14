@@ -6,12 +6,12 @@
   "license": "UNLICENSED",
   "dependencies": {
     "antd": "^3.2.3",
-    "formsy-react": "^1.1.4",
-    "lodash": "^4.17.5",
+    "cxs": "^6.2.0",
     "polished": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.2.1",
     "react-scripts": "1.1.1",
     "react-typist": "^2.0.4",
     "styled-components": "^3.1.6"

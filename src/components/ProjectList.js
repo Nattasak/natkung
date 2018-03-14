@@ -41,9 +41,6 @@ const ProjectsWrapper = styled.div`
       margin: 0 0 0 37px;
     }
   }
-
-  @media (min-width: 768px) {
-  }
 `
 
 export default class ProjectList extends Component {
