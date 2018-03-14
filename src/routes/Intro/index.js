@@ -1,4 +1,3 @@
-import { withRouter } from 'react-router-dom'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Typist from 'react-typist'
@@ -30,11 +29,7 @@ const Br = styled.br`
   margin-top: 2vw;
 `
 
-class Intro extends Component {
-  goHome = () => {
-    this.props.history.push('/project')
-  }
-
+export default class Intro extends Component {
   render() {
     return (
       <Section>
@@ -44,11 +39,14 @@ class Intro extends Component {
               <Typist.Delay ms={700} />
               <h2>Hi 😁</h2>
               <Typist.Delay ms={600} />
-              {'  '}My name is Nat.
+              My name is Notto.
+              <Typist.Backspace count={6} delay={200} />
+              Nutsu.
+              <Typist.Backspace count={6} delay={200} />
+              Nat.
               <Typist.Delay ms={800} />
               <Br />
               <span>I'm a Front End Developer 😋</span>
-              {setTimeout(() => this.goHome(), 7400)}
             </Typist>
           </IntroWrapper>
         </Container>
@@ -56,5 +54,3 @@ class Intro extends Component {
     )
   }
 }
-
-export default withRouter(Intro)
