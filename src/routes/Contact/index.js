@@ -5,28 +5,50 @@ import styled from 'styled-components'
 import { PageTitle, Section, Container } from '../../shared/styles'
 
 const SocialWrapper = styled.div`
-  width: 50vw;
-  height: 50vh;
-
   ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
     margin: 0;
   }
 
-  i {
-    font-size: 10vh !important;
-  }
-
-  @media (min-width: 768px) {
-    ul {
-      flex-direction: row;
+  a {
+    &.twitter i {
+      color: #17ace9;
     }
 
+    &.github i {
+      color: #000;
+    }
+
+    &.medium i {
+      color: #000;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin: 10vw;
+  }
+
+  i {
+    font-size: 20vw !important;
+  }
+
+  /* [ Tablets ] */
+  @media (min-width: 768px) {
+    li {
+      margin: 8vw;
+    }
     i {
-      font-size: 10vw !important;
+      font-size: 13vw !important;
+    }
+  }
+
+  /* [ Desktops ] */
+  @media (min-width: 1025px) {
+    li {
+      margin: 7vw;
+    }
+    i {
+      font-size: 9vw !important;
     }
   }
 `
@@ -41,17 +63,17 @@ export default class Contact extends React.Component {
             <SocialWrapper>
               <ul>
                 <li>
-                  <a href="https://github.com/Nattasak">
-                    <Icon type="github" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/NatZa55490826">
+                  <a href="https://twitter.com/NatZa55490826" className="twitter hvr-grow">
                     <Icon type="twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://medium.com/@nattasak111">
+                  <a href="https://github.com/Nattasak" className="github hvr-grow">
+                    <Icon type="github" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@nattasak111" className="medium hvr-grow">
                     <Icon type="medium" />
                   </a>
                 </li>
