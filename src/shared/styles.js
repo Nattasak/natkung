@@ -11,6 +11,14 @@ export const PageTitle = styled.h1`
   padding-bottom: 9px;
 `
 
+export const H2 = styled.h2`
+  font-weight: 600;
+  border: 1px dashed #000;
+  display: inline;
+  padding: 1px 10px;
+  background: #f4f4f4;
+`
+
 export const Section = styled.section`
   padding: 1.1rem 0;
 `
@@ -23,7 +31,7 @@ export const Hr = styled.hr`
 `
 
 export const Br = styled.br`
-  content: " ";
+  content: ' ';
   display: block;
   margin-top: 30px;
 `
