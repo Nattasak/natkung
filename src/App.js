@@ -1,6 +1,6 @@
 import { AnimatedSwitch, spring } from 'react-router-transition'
 import { BackTop } from 'antd'
-import { Route, Redirect } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import cxs from 'cxs'
 import React, { Component } from 'react'
 
