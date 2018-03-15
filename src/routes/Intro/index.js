@@ -20,7 +20,7 @@ const IntroWrapper = styled.div`
     white-space: nowrap;
   }
 
-  span {
+  & > span {
     font-size: 4vw;
   }
 `
@@ -55,7 +55,7 @@ export default class Intro extends Component {
           <IntroWrapper>
             <Typist>
               <Typist.Delay ms={700} />
-              <h2>Hi 😁</h2>
+              <h2>Hi <span role="img" aria-label="Grin">😁</span></h2>
               <Typist.Delay ms={600} />
               My name is Notto.
               <Typist.Backspace count={6} delay={200} />
@@ -64,7 +64,7 @@ export default class Intro extends Component {
               Nat.
               <Typist.Delay ms={800} />
               <Br />
-              <span>I'm a Front End Developer 😋</span>
+              <span>I'm a Front End Developer <span role="img" aria-label="Yum">😋</span></span>
             </Typist>
             <Delay wait={8300}>
               <SeeProjectWrapper>

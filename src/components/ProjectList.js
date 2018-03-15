@@ -31,15 +31,33 @@ const ProjectsWrapper = styled.div`
     }
 
     a {
+      position: relative;
       display: inline-block;
       width: 210px;
       margin-left: 35px;
+
+      & > span:hover + div {
+        opacity: 1;
+      }
     }
 
     p {
       font-size: 14px;
       margin: 0 0 0 37px;
     }
+  }
+`
+
+const StackWrapper = styled.div`
+  position: absolute;
+  opacity: 0;
+  top: -9px;
+  left: 70%;
+  font-size: 24px;
+  transition: all 0.2s ease-out;
+
+  & > i {
+    margin: 0 5px;
   }
 `
 
@@ -52,7 +70,14 @@ export default class ProjectList extends Component {
             <ol>
               {projectListJSON.map(project => (
                 <li key={project.id}>
-                  <a href={project.href}>{project.title}</a>
+                  <a href={project.href}>
+                    <span>{project.title}</span>
+                    <StackWrapper>
+                      <i class="devicon-react-original colored" />
+                      <i class="devicon-html5-plain-wordmark colored" />
+                      <i class="devicon-css3-plain-wordmark colored" />
+                    </StackWrapper>
+                  </a>
                   <p>{project.desc}</p>
                 </li>
               ))}
