@@ -42,7 +42,7 @@ const StackWrapper = styled.div`
 export default () => {
   return (
     <div>
-      <PageTitle>Home</PageTitle>
+      <PageTitle>Technology stack</PageTitle>
       <StackWrapper>
         <div className="html5">
           <svg viewBox="0 0 128 128">

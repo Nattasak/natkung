@@ -57,7 +57,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <PageTitle>Contact</PageTitle>
+        <PageTitle>Social</PageTitle>
         <Section>
           <Container>
             <SocialWrapper>
