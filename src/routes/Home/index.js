@@ -148,7 +148,7 @@ export default () => {
           </svg>
         </div>
         <div className="yarn">
-          <img src="img/logo/yarn.png" />
+          <img src="img/logo/yarn.png" alt="yarn" />
         </div>
         <div className="trello">
         <svg viewBox="0 0 128 128">

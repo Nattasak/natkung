@@ -1,14 +1,27 @@
 import styled from 'styled-components'
 
 export const PageTitle = styled.h1`
-  color: black;
-  font-size: 18px;
+  /* color: black; */
+  /* font-size: 18px; */
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 8vw;
   font-weight: 600;
   letter-spacing: 1px;
-  width: 36px;
+  width: 99px;
   white-space: nowrap;
   border-bottom: 1px solid #000;
   padding-bottom: 9px;
+
+  /* [ Tablets ] */
+  @media (min-width: 768px) {
+    font-size: 6vw;
+  }
+
+  /* [ Desktops ] */
+  @media (min-width: 1025px) {
+    font-size: 3vw;
+  }
 `
 
 export const H2 = styled.h2`
