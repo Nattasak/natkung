@@ -10,7 +10,17 @@ const ExperienceWrapper = styled.div`
 export default () => {
   return (
     <div>
-      <PageTitle>About Nat</PageTitle>
+      <PageTitle>
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span> </span>
+        <span>N</span>
+        <span>a</span>
+        <span>t</span>
+      </PageTitle>
       <Br />
       <Section>
         <Container>

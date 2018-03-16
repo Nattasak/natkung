@@ -12,6 +12,24 @@ export const PageTitle = styled.h1`
   white-space: nowrap;
   border-bottom: 1px solid #000;
   padding-bottom: 9px;
+  user-select: none;
+
+  & > span {
+    display: inline-block;
+    transition: transform 1s var(--ease-out-expo);
+
+    &:hover {
+      color: #000;
+
+      &:nth-child(odd) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(even) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
 
   /* [ Tablets ] */
   @media (min-width: 768px) {

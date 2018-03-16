@@ -9,6 +9,7 @@ injectGlobal`
     --main-font-size: 17px;
     --main-link-color: #0366d6;
     --main-link-hover-color: #024ea4;
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   }
   body {
     counter-reset: item; /* Counters */
