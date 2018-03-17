@@ -54,11 +54,9 @@ const ProjectsWrapper = styled.div`
 
   p {
     font-size: 14px;
-    margin: 0 0 0 37px;
-    padding: 5px 10px;
-    width: fit-content;
+    margin: -9px 0 0 37px;
+    padding-left: 10px;
     display: block !important;
-    margin-top: -15px;
   }
 
   /* [ Desktops ] */
