@@ -34,8 +34,8 @@ const ProjectsWrapper = styled.div`
   a {
     position: relative;
     display: inline-block;
-    width: 210px;
-    margin-left: 35px;
+    /* width: 210px; */
+    margin-left: 37px;
     padding: 9px 0;
 
     &:hover,
@@ -59,8 +59,17 @@ const ProjectsWrapper = styled.div`
     display: block !important;
   }
 
+  /* [ Tablets ] */
+  @media (min-width: 768px) {
+  }
+
   /* [ Desktops ] */
   @media (min-width: 1025px) {
+    /*a {
+      span {
+        font-size: 1.5vw;
+      }
+    }*/
     p {
       opacity: 0;
     }
@@ -71,7 +80,7 @@ const StackWrapper = styled.div`
   position: absolute;
   opacity: 0;
   top: 3px;
-  left: 70%;
+  left: 110%;
   font-size: 24px;
   transition: all 0.2s ease-out;
 
