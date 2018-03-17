@@ -29,22 +29,42 @@ const ProjectsWrapper = styled.div`
       position: absolute;
       top: 7px;
     }
+  }
 
-    a {
-      position: relative;
-      display: inline-block;
-      width: 210px;
-      margin-left: 35px;
-      padding: 9px 0;
+  a {
+    position: relative;
+    display: inline-block;
+    width: 210px;
+    margin-left: 35px;
+    padding: 9px 0;
 
-      &:hover > div {
+    &:hover,
+    &:focus,
+    &:active {
+      & > div {
         opacity: 1;
       }
+      & + p {
+        opacity: 1;
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+      }
     }
+  }
 
+  p {
+    font-size: 14px;
+    margin: 0 0 0 37px;
+    padding: 5px 10px;
+    width: fit-content;
+    display: block !important;
+    margin-top: -15px;
+  }
+
+  /* [ Desktops ] */
+  @media (min-width: 1025px) {
     p {
-      font-size: 14px;
-      margin: 0 0 0 37px;
+      opacity: 0;
     }
   }
 `
@@ -79,7 +99,7 @@ export default class ProjectList extends Component {
                       <i class="devicon-css3-plain-wordmark colored" />
                     </StackWrapper>
                   </a>
-                  <p>{project.desc}</p>
+                  <p className="hvr-sink">{project.desc}</p>
                 </li>
               ))}
             </ol>
