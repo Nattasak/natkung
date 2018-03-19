@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const PageTitle = styled.h1`
-  /* color: black; */
-  /* font-size: 18px; */
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 8vw;
