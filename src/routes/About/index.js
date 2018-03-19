@@ -10,6 +10,33 @@ const ExperienceWrapper = styled.div`
 const ImgWrapper = styled.div`
   margin-bottom: 5vw;
 
+  figure {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+    }
+    &:hover::before {
+      animation: shine 1.3s;
+    }
+    @keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+  }
+
   img {
     width: 50vw;
     border-radius: 8px;
@@ -27,6 +54,12 @@ const ImgWrapper = styled.div`
   /* [ Desktops ] */
   @media (min-width: 1025px) {
     margin-bottom: 2vw;
+
+    figure {
+      &:hover::before {
+        animation: shine 2.3s;
+      }
+    }
 
     img {
       width: 20vw;
@@ -52,12 +85,16 @@ export default () => {
       <Section>
         <Container>
           <ImgWrapper>
-            <img src="img/nat.jpg" />
+            <figure>
+              <img src="img/nat.jpg" />
+            </figure>
           </ImgWrapper>
           <H2>Work Experience</H2>
           <ExperienceWrapper>
             <ul>
-              <li>Front-end Developer<br/>@ Ultimate Digital Service (1 year)</li>
+              <li>
+                Front-end Developer<br />@ Ultimate Digital Service (1 year)
+              </li>
             </ul>
           </ExperienceWrapper>
         </Container>
