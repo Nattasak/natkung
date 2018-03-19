@@ -18,6 +18,10 @@ const SocialWrapper = styled.div`
       color: #000;
     }
 
+    &.codepen i {
+      color: #000;
+    }
+
     &.medium i {
       color: #000;
     }
@@ -77,6 +81,11 @@ export default class Contact extends React.Component {
                 <li>
                   <a href="https://github.com/Nattasak" className="github hvr-grow">
                     <Icon type="github" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://codepen.io/nattasak1" className="codepen hvr-grow">
+                    <Icon type="codepen" />
                   </a>
                 </li>
                 <li>
