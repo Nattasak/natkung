@@ -77,7 +77,10 @@ const WorkWrapper = styled.div`
     color: #aaa;
   }
   img {
-    width: 100%;
+    width: 272%;
+    position: absolute;
+    bottom: 0;
+    max-width: none;
   }
   .overlay {
     position: absolute;
@@ -143,7 +146,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/1.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -153,7 +156,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/2.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -163,7 +166,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/3.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -173,7 +176,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/4.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -183,7 +186,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/5.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -193,7 +196,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/6.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -203,7 +206,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/7.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
@@ -213,7 +216,7 @@ export default () => {
             <h3>Title</h3>
             <p>testdesc</p>
             <div class="overlay" />
-            <img src="img/works/1.png" />
+            <img src="img/works/8.jpg" />
             <div class="view">VIEW</div>
           </a>
         </WorkWrapper>
