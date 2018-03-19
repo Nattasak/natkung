@@ -64,7 +64,7 @@ export default class Intro extends Component {
               Nat.
               <Typist.Delay ms={800} />
               <Br />
-              <span>I'm a Front End Developer <span role="img" aria-label="Yum">😋</span></span>
+              <span>I'm a Front-end Developer <span role="img" aria-label="Yum">😋</span></span>
             </Typist>
             <Delay wait={8300}>
               <SeeProjectWrapper>
